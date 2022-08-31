@@ -44,8 +44,21 @@ const validateInput = (input) => {
 }
 
 
-//I'm using an infinite loop on purpose, because I want to allow the user to input numbers multiple times
+//Tests
+if (validateInput(5) == "The answer is 16"){
+    console.log("Test 1 passed")
+}else{
+    console.log("Test 1 failed")
+}
 
+if (validateInput(-0) == "The number needs to be bigger than 0"){
+    console.log("Test 2 passed")
+}else{
+    console.log("Test 2 failed")
+}
+
+//Get user input
+//I'm using an infinite loop on purpose, because I want to allow the user to input numbers multiple times
 while (true) {
 
     //This gets the user input, validates it, and then outputs the results
